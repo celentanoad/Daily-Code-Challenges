@@ -16,10 +16,10 @@
 function validIPAddress(IP){
     if (IP.includes('.')) {
         const IPv4 = IP.split('.');
-        const isDigits = string => [...string].every(c => '0123456789'.includes(c));
+        let regex = /^\d+$/
         if (IPv4.length !== 4) return "Neither";
         for (let set of IPv4) {
-            if (!isDigits(set) ||
+            if (!regex.test(set) ||
             (set < 0 || set > 255) ||
             (set.startsWith('0') && set.length > 1) ||
             (set.length < 1)
@@ -28,10 +28,10 @@ function validIPAddress(IP){
         return "IPv4";
     } else {
         const IPv6 = IP.split(':');
-        const digitsAndLetters = string => [...string].every(c => '0123456789abcdefABCDEF'.includes(c));
+        let regex = /^[a-f0-9]+$/i;
         if (IPv6.length !== 8) return "Neither";
         for (let set of IPv6) {
-            if (!digitsAndLetters(set) ||
+            if (!regex.test(set) ||
             (set.length > 4) ||
             (set.length < 1))
             return "Neither";
@@ -40,4 +40,4 @@ function validIPAddress(IP){
     }
 }
 
-console.log(validIPAddress("20EE:FGb8:85a3:0:0:8A2E:0370:7334"))
+console.log(validIPAddress("23.a5.22"))
