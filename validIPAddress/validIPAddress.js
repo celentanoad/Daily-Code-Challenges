@@ -40,4 +40,3 @@ function validIPAddress(IP){
     }
 }
 
-console.log(validIPAddress("23.a5.22"))
