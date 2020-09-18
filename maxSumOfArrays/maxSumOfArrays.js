@@ -1,7 +1,6 @@
-
+// sum ALL the things! Anything that is a number
 
 function arraySum(arr) {
-    // sum ALL the things!
     let sum = 0;
     function getSum(arr) {
         for (let num of arr) {
@@ -9,7 +8,7 @@ function arraySum(arr) {
             else if (!isNaN(num)) sum += num;
         }
     }
-    getSum(arr)
+    getSum(arr);
     return sum;
 }
 
