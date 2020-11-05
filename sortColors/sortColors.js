@@ -27,3 +27,5 @@ function sortColors(nums){
     }
     return nums;
 };
+
+module.exports = sortColors;

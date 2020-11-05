@@ -46,3 +46,5 @@ function getLights(num) {
 }
 
 console.log(readBinaryWatch(5));
+
+module.exports = readBinaryWatch;

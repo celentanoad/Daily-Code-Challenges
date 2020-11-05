@@ -27,7 +27,6 @@ function maxTickets(tickets) {
     
     m = cache.sort((a, b) => a - b)
     return m[m.length-1]
-    return m;
 }
 
     // for (let i = 0; i < sortedTickets.length; i++) {

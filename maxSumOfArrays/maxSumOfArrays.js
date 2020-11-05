@@ -12,4 +12,4 @@ function arraySum(arr) {
     return sum;
 }
 
-console.log(arraySum([4, 5, [9,4, "sdflkjlsf", [0, 0, 2, 3,4 ,'sdfjf',9], 9,3 ,2]]));
+module.exports = arraySum;

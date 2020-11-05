@@ -27,3 +27,5 @@ function concatenationMaxSum(arr, k) {
     }
     return maxSum;
 }
+
+module.exports = concatenationMaxSum;
