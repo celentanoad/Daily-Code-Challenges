@@ -1,5 +1,3 @@
-const { test, expect } = require('@jest/globals');
-const { array } = require('yargs');
 const arraySum = require('./maxSumOfArrays');
 
 test('[2, 3, 1] returns 6', () => {
