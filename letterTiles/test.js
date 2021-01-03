@@ -1,4 +1,3 @@
-const { test } = require('@jest/globals');
 const letterTiles = require('./letterTiles');
 
 test('tiles AAB returns 8', () => {
