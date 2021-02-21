@@ -36,3 +36,5 @@ function matrix(n) {
     }
     return results;
 }
+
+console.log(matrix(2))
