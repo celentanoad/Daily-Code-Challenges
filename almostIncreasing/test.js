@@ -1,4 +1,3 @@
-const { TestScheduler } = require('jest');
 const almostIncreasingSequence = require('./almostIncreasingSequence');
 
 test('[1, 3, 2, 1] returns false', () => {
